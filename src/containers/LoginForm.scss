@@ -2,6 +2,7 @@ $light-red: #fff0f1;
 $dark-red: #f6303f;
 $dark-blue: #05549f;
 
+
 .login__form__container {
 
     margin-bottom: 150px;
@@ -126,7 +127,7 @@ $dark-blue: #05549f;
 @media only screen and (max-width: 600px) {
     .login__form__submit-btn {
         margin-left: 11px;
-        width: 92%;
+        width: 95%;
     }
 
     .checkmark {
@@ -134,8 +135,33 @@ $dark-blue: #05549f;
     }
 
     .login__form__error--text {
-        margin-left: 15px;
-        width: 90%;
+        margin-left: 8px;
+        width: 95%;
+
+    }
+
+    .login__form__container {
+        margin-bottom: 50px;
+    }
+
+    .login__form__forgot-password {
+        padding-left: 60px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 780px) {
+    .checkmark {
+        left: 55px;
+    }
+
+    .login__form__submit-btn {
+        width: 72%;
+        margin-left: 57px;
+    }
+
+    .login__form__error--text {
+        margin-left: 56px;
+        width: 73%;
 
     }
 }
