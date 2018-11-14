@@ -70,3 +70,18 @@ $light-blue: #f0f7fe;
         border-bottom: 3px solid $light-blue;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .header__logo {
+        padding: 20px 0px 0px 0px;
+    }
+
+    .header__searchbar--icon {
+        top: 90px;
+    }
+
+    #searchTerm:checked~.header__searchbar--expanded {
+        width: 70%;
+        top: 90px;
+    }
+}

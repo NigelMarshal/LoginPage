@@ -122,3 +122,20 @@ $dark-blue: #05549f;
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+@media only screen and (max-width: 600px) {
+    .login__form__submit-btn {
+        margin-left: 11px;
+        width: 92%;
+    }
+
+    .checkmark {
+        left: 14px;
+    }
+
+    .login__form__error--text {
+        margin-left: 15px;
+        width: 90%;
+
+    }
+}
