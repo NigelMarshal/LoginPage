@@ -6,8 +6,8 @@ import * as Yup from "yup";
 const App = ({ values, errors, touched, isSubmitting }) => (
   <Form className="login__form__container pa4 black-90 measure center">
     <div>
-      <h2>Sign In Now</h2>
-      <p>Unlock awesome features</p>
+      <h2 className="login__form--header">Sign In Now</h2>
+      <p className="login__form--sub-header">Unlock awesome features!</p>
       {touched.email && errors.email && (
         <p className="login__form__error--text">{errors.email}</p>
       )}

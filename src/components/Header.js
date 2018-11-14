@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.scss";
+import Tilt from "react-tilt";
 const logo = require("../assets/img/carrefour-logo.png");
 const search = require("../assets/img/search-icon.png");
 
@@ -7,7 +8,15 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header__logo">
-        <img src={logo} alt="Carrefour-logo" />
+        <Tilt
+          className="Tilt"
+          options={{ max: 55 }}
+          style={{ height: 120, width: 200 }}
+        >
+          <div className="Tilt-inner">
+            <img src={logo} alt="Carrefour-logo" />{" "}
+          </div>
+        </Tilt>
       </div>
       <div className="header__search">
         <input id="searchTerm" type="checkbox" />

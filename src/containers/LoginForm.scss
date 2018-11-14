@@ -3,7 +3,7 @@ $dark-red: #f6303f;
 $dark-blue: #05549f;
 
 .login__form__container {
-    margin-top: 60px;
+
     margin-bottom: 150px;
     border: solid 2px #f6f6f6;
     border-radius: 5px;
@@ -55,4 +55,8 @@ $dark-blue: #05549f;
     margin: 0;
     display: inline-block;
     padding-left: 10px;
+}
+
+.login__form--sub-header {
+    padding-bottom: 30px;
 }
