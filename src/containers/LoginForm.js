@@ -31,6 +31,7 @@ const App = ({ values, errors, touched, isSubmitting }) => (
     </div>
     <label className="login__form__remember__me--label">
       <Field type="checkbox" name="rememberme" checked={values.rememberme} />
+      <span className="checkmark" />
       <p className="login__form__remember__me--text">Keep me logged in</p>
       <a
         className="login__form__forgot-password"
