@@ -72,14 +72,14 @@ const LoginForm = withFormik({
     setTimeout(() => {
       if (
         values.email === "nigelmarshal@gmail.com" &&
-        values.password === "whatup?"
+        values.password === "testing123"
       ) {
         setErrors({ email: "Welcome back, Nigel!" });
       } else {
         resetForm();
       }
       setSubmitting(false);
-    }, 2000);
+    }, 1000);
   }
 })(App);
 

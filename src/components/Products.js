@@ -1,4 +1,5 @@
 import React from "react";
+import "./Products.scss";
 const product = require("../assets/img/product-card.png");
 const Products = () => {
   return (
@@ -6,19 +7,19 @@ const Products = () => {
       <div className="cf ph2-ns">
         <div className="fl w-100 w-third-ns pa2">
           <img src={product} alt="iPhone" />
-          <p>iPhone 6 Black</p>
-          <p>AED 1000</p>
+          <p className="products__card--product-name">iPhone 6 Black</p>
+          <p className="products__card--product-price">AED 1000</p>
         </div>
         <div className="fl w-100 w-third-ns pa2">
           <img src={product} alt="iPhone" />
-          <p>iPhone 7 Black</p>
-          <p>AED 2000</p>
+          <p className="products__card--product-name">iPhone 7 Black</p>
+          <p className="products__card--product-price">AED 2000</p>
         </div>
 
         <div className="fl w-100 w-third-ns pa2">
           <img src={product} alt="iPhone" />
-          <p>iPhone 8 Black</p>
-          <p>AED 3000</p>
+          <p className="products__card--product-name">iPhone 8 Black</p>
+          <p className="products__card--product-price">AED 3000</p>
         </div>
       </div>
     </div>
