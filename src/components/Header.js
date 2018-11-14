@@ -11,7 +11,7 @@ const Header = () => {
       </div>
       <div className="header__search">
         <input id="searchTerm" type="checkbox" />
-        <label className="header__searchbar--icon" for="searchTerm">
+        <label className="header__searchbar--icon" htmlFor="searchTerm">
           <img src={search} alt="Search-icon" />
         </label>
         <input

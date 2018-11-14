@@ -1,26 +1,54 @@
 import React from "react";
+import "./LoginForm.scss";
 import { withFormik, Form, Field } from "formik";
 import * as Yup from "yup";
 
 const App = ({ values, errors, touched, isSubmitting }) => (
-  <Form className="pa4 black-90 measure center">
+  <Form className="login__form__container pa4 black-90 measure center">
     <div>
       <h2>Sign In Now</h2>
       <p>Unlock awesome features</p>
-      {touched.email && errors.email && <p>{errors.email}</p>}
-      <Field type="email" name="email" placeholder="Email" />
+      {touched.email && errors.email && (
+        <p className="login__form__error--text">{errors.email}</p>
+      )}
+      <Field
+        className="login__form--text-field"
+        type="email"
+        name="email"
+        placeholder="Email"
+      />
     </div>
     <div>
-      {touched.password && errors.password && <p>{errors.password}</p>}
-      <Field type="password" name="password" placeholder="Password" />
+      {touched.password && errors.password && (
+        <p className="login__form__error--text">{errors.password}</p>
+      )}
+      <Field
+        className="login__form--text-field"
+        type="password"
+        name="password"
+        placeholder="Password"
+      />
     </div>
-    <label>
+    <label className="login__form__remember__me--label">
       <Field type="checkbox" name="rememberme" checked={values.rememberme} />
-      Keep me logged in
-      <a href="#">Forgot password?</a>
+      <p className="login__form__remember__me--text">Keep me logged in</p>
+      <a
+        className="login__form__forgot-password"
+        href="https://www.carrefourmyclub.com/ForgotPassword.aspx"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Forgot password?
+      </a>
     </label>
 
-    <button disabled={isSubmitting}>Submit</button>
+    <button
+      className="login__form__submit-btn"
+      disabled={isSubmitting}
+      type="submit"
+    >
+      Sign In
+    </button>
   </Form>
 );
 

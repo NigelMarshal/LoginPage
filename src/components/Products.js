@@ -2,7 +2,7 @@ import React from "react";
 const product = require("../assets/img/product-card.png");
 const Products = () => {
   return (
-    <div className="mw9 center ph3-ns">
+    <div className="mw9 center ph3-ns tc">
       <div className="cf ph2-ns">
         <div className="fl w-100 w-third-ns pa2">
           <img src={product} alt="iPhone" />
