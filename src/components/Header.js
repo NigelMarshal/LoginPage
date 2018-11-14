@@ -1,23 +1,23 @@
 import React from "react";
-
 import "./Header.scss";
+const logo = require("../assets/img/carrefour-logo.png");
+const search = require("../assets/img/search-icon.png");
 
 const Header = () => {
-  const logo = require("../assets/img/carrefour-logo.png");
   return (
     <div className="header">
-      <div className="logo">
+      <div className="header__logo">
         <img src={logo} alt="Carrefour-logo" />
       </div>
-      <div class="search">
-        <input id="searchCheck" type="checkbox" />
-        <label class="btn" for="searchCheck">
-          <i class="fa fa-search" />
+      <div className="header__search">
+        <input id="searchTerm" type="checkbox" />
+        <label className="header__searchbar--icon" for="searchTerm">
+          <img src={search} alt="Search-icon" />
         </label>
         <input
-          class="searchbar"
+          className="header__searchbar--expanded"
           type="text"
-          placeholder="Enter a search term..."
+          placeholder="Enter a search term."
         />
       </div>
     </div>
