@@ -8,6 +8,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header__logo">
+        {/* Logo amimation */}
         <Tilt
           className="Tilt"
           options={{ max: 55 }}
@@ -18,6 +19,7 @@ const Header = () => {
           </div>
         </Tilt>
       </div>
+      {/* Expansive search bar using CSS */}
       <div className="header__search">
         <input id="searchTerm" type="checkbox" />
         <label className="header__searchbar--icon" htmlFor="searchTerm">

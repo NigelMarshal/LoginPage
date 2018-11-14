@@ -1,3 +1,4 @@
+//Vaiables
 $light-blue: #f0f7fe;
 
 .header {
@@ -8,6 +9,7 @@ $light-blue: #f0f7fe;
     padding: 30px 0px 0px 100px;
 }
 
+//Hide checkmark
 #searchTerm {
     display: none;
 }
@@ -39,6 +41,7 @@ $light-blue: #f0f7fe;
     }
 }
 
+//Styles for searchbar on click
 #searchTerm:checked~.header__searchbar--expanded {
     background-color: $light-blue;
     transform: scaleX(1);
@@ -49,6 +52,7 @@ $light-blue: #f0f7fe;
     font-size: 14px;
 }
 
+//Input field (Search Bar)
 .header__searchbar--expanded {
     display: block;
     position: absolute;
@@ -71,6 +75,7 @@ $light-blue: #f0f7fe;
     }
 }
 
+//Mobile styles
 @media only screen and (max-width: 600px) {
     .header__logo {
         padding: 20px 0px 0px 0px;

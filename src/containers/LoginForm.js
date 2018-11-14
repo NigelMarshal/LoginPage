@@ -3,11 +3,13 @@ import "./LoginForm.scss";
 import { withFormik, Form, Field } from "formik";
 import * as Yup from "yup";
 
+//Formik and yup for form input handling + validation
 const App = ({ values, errors, touched, isSubmitting }) => (
   <Form className="login__form__container pa4 black-90 measure center">
     <div>
       <h2 className="login__form--header">Sign In Now</h2>
       <p className="login__form--sub-header">Unlock awesome features!</p>
+      {/* Set error messages */}
       {touched.email && errors.email && (
         <p className="login__form__error--text">{errors.email}</p>
       )}
@@ -52,7 +54,7 @@ const App = ({ values, errors, touched, isSubmitting }) => (
     </button>
   </Form>
 );
-
+//Using Yup for error handling checks
 const LoginForm = withFormik({
   mapPropsToValues({ email, password, rememberme }) {
     return {
@@ -71,6 +73,7 @@ const LoginForm = withFormik({
   }),
   handleSubmit(values, { resetForm, setErrors, setSubmitting }) {
     setTimeout(() => {
+      //Using the details below will provide a mock welcome message after a delay.
       if (
         values.email === "nigelmarshal@gmail.com" &&
         values.password === "testing123"

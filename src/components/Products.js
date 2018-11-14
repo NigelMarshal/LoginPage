@@ -3,6 +3,7 @@ import "./Products.scss";
 const product = require("../assets/img/product-card.png");
 const Products = () => {
   return (
+    //Standard grid styling using Tachyons
     <div className="mw9 center ph3-ns tc">
       <div className="cf ph2-ns">
         <div className="fl w-100 w-third-ns pa2">
