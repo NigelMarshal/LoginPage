@@ -11,6 +11,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 
-### Road so far
+### Project Overview
 
-Testing out the new features of create-react-app V2. Creating a login form using Formik for clean formatting without tears, tachyons for styling and yup for validation.
+Testing out the new features of create-react-app V2. Creating a login form using Formik for clean formatting without tears, tachyons CSS for styling and Yup for validation.
