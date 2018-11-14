@@ -1,0 +1,23 @@
+.products__card--product-name {
+    text-align: left;
+    padding-left: 115px;
+    font-size: 14px;
+    color: #414141;
+}
+
+.products__card--product-price {
+    text-align: left;
+    padding-left: 115px;
+    font-size: 18px;
+    font-weight: 900;
+
+}
+
+//Tablet styles
+@media (min-width: 480px) and (max-width: 780px) {
+
+    .products__card--product-name,
+    .products__card--product-price {
+        padding-left: 20px;
+    }
+}

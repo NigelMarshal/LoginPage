@@ -1,0 +1,172 @@
+//Variables
+$light-red: #fff0f1;
+$dark-red: #f6303f;
+$dark-blue: #05549f;
+
+
+.login__form__container {
+
+    margin-bottom: 150px;
+    border: solid 2px #f6f6f6;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.login__form__error--text {
+    color: #f6303f;
+    font-size: 12px;
+    background-color: #fff0f1;
+    width: 30%;
+    padding: 5px;
+    margin-bottom: 0px;
+    margin-left: 232px;
+
+}
+
+.login__form--text-field {
+    width: 300px;
+    height: 45px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.login__form__submit-btn {
+    display: block;
+    width: 72%;
+    margin-left: 58px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: $dark-blue;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.login__form__forgot-password {
+    font-size: 12px;
+    padding-left: 80px;
+    text-decoration: none;
+}
+
+.login__form__remember__me--label {
+    font-size: 12px;
+}
+
+.login__form__remember__me--text {
+    margin: 0;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.login__form--sub-header {
+    padding-bottom: 30px;
+}
+
+.login__form__remember__me--label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+
+}
+
+//Setting up custom Checkbox styles
+
+
+.login__form__remember__me--label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: -5px;
+    left: 55px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+
+.login__form__remember__me--label:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+
+.login__form__remember__me--label input:checked~.checkmark {
+    background-color: $dark-blue
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.login__form__remember__me--label input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.login__form__remember__me--label .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+//Mobile styles
+
+@media only screen and (max-width: 600px) {
+    .login__form__submit-btn {
+        margin-left: 11px;
+        width: 95%;
+    }
+
+    .checkmark {
+        left: 14px;
+    }
+
+    .login__form__error--text {
+        margin-left: 8px;
+        width: 95%;
+
+    }
+
+    .login__form__container {
+        margin-bottom: 50px;
+    }
+
+    .login__form__forgot-password {
+        padding-left: 60px;
+    }
+}
+
+//Tablet styles
+@media (min-width: 480px) and (max-width: 780px) {
+    .checkmark {
+        left: 55px;
+    }
+
+    .login__form__submit-btn {
+        width: 72%;
+        margin-left: 57px;
+    }
+
+    .login__form__error--text {
+        margin-left: 56px;
+        width: 73%;
+
+    }
+}

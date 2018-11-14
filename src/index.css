@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Open Sans Light';
+    src: local('Open Sans Light'), url('./assets/fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
+}
+
+
+body {
+    font-family: 'Open Sans Light';
+}
